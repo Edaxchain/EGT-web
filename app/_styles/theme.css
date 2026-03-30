@@ -1,0 +1,56 @@
+:root {
+    --background: #ffffff;
+    --foreground: #1a1a1a;
+    --surface: #f4f7f4;
+    --text-main: #1a1a1a;
+    --text-sub: #1a6e1a;
+    --text-main-inverted: #f0f0f0;
+    --brand-dominant: #2ea82e;
+    --brand-strong: #1a6e1a;
+    --brand-subtle: #dff5df;
+    --border: #d0e0d0;
+    --input-bg: #ffffff;
+    --card-shadow: rgba(26, 110, 26, 0.05);
+}
+
+.dark {
+    --background: #1a1a1a;
+    --foreground: #f0f0f0;
+    --surface: #242824;
+    --text-main: #f0f0f0;
+    --text-sub: #4dcc4d;
+    --text-main-inverted: #1a1a1a;
+    --brand-dominant: #2ea82e;
+    --brand-strong: #4dcc4d;
+    --brand-subtle: #242824;
+    --border: #2e3e2e;
+    --input-bg: #1f1f1f;
+    --card-shadow: rgba(0, 0, 0, 0.3);
+}
+
+@theme {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-text-main: var(--text-main);
+    --color-text-sub: var(--text-sub);
+    --color-text-main-inverted: var(--text-main-inverted);
+    --color-border: var(--border);
+    --color-brand-dominant: var(--brand-dominant);
+    --color-brand-strong: var(--brand-strong);
+    --color-brand-subtle: var(--brand-subtle);
+    --color-input-bg: var(--input-bg);
+    --color-card-shadow: var(--card-shadow);
+
+    /*shadcn var*/
+    --color-primary: var(--brand-dominant);
+    --color-primary-foreground: var(--background);
+    --color-secondary: var(--brand-strong);
+    --color-accent: var(--brand-subtle);
+    --color-muted: var(--surface);
+    --color-muted-foreground: var(--text-sub);
+    --color-card: var(--surface);
+    --color-card-foreground: var(--text-main);
+
+    --font-brand: "Prompt", sans-serif;
+
+}
