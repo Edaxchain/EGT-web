@@ -1,9 +1,11 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
 import { Button } from "@/app/_components/ui/button";
 import Link from "next/link";
 import { motion, Variants } from "framer-motion";
+import Image from "next/image";
+import heroLight from "@/app/_assets/solar_panel_day.png";
+import heroDark from "@/app/_assets/solar_panel_night.png";
 
 export default function Hero() {
     const containerVars = {
@@ -29,8 +31,45 @@ export default function Hero() {
     return (
         <section
             id="hero"
-            className="relative flex flex-col lg:flex-row h-auto lg:h-[60vh] min-h-[540px] bg-panel-dark overflow-hidden border-b border-amber/10 items-start px-12 lg:px-48"
+            className="relative flex flex-col lg:flex-row h-auto lg:h-[60vh] min-h-[540px] bg-panel-dark overflow-hidden items-start px-12 lg:px-48"
         >
+            {/* Background Image Container */}
+            <div className="absolute inset-y-0 right-0 w-full lg:w-[60%] pointer-events-none z-0">
+                <div className="relative w-full h-full">
+                    {/* Light Mode Image */}
+                    <div className="absolute inset-0 block dark:hidden">
+                        <Image
+                            src={heroLight}
+                            alt="Solar Hero Light"
+                            fill
+                            className="object-cover"
+                            priority
+                            style={{
+                                maskImage:
+                                    "linear-gradient(to left, black 20%, transparent 95%)",
+                                WebkitMaskImage:
+                                    "linear-gradient(to left, black 20%, transparent 95%)",
+                            }}
+                        />
+                    </div>
+                    {/* Dark Mode Image */}
+                    <div className="absolute inset-0 hidden dark:block">
+                        <Image
+                            src={heroDark}
+                            alt="Solar Hero Dark"
+                            fill
+                            className="object-cover opacity-60"
+                            priority
+                            style={{
+                                maskImage:
+                                    "linear-gradient(to left, black 20%, transparent 80%)",
+                                WebkitMaskImage:
+                                    "linear-gradient(to left, black 20%, transparent 80%)",
+                            }}
+                        />
+                    </div>
+                </div>
+            </div>
             {/* Left Content */}
             <motion.div
                 className="flex-1 w-full flex flex-col items-center lg:items-start py-12 md:py-24 z-10 text-center lg:text-left justify-center"
@@ -46,7 +85,7 @@ export default function Hero() {
                     >
                         ติดตั้งโซล่าเซลล์ ครบวงจร
                         <br />
-                        <span className="text-green">ครบวงจร</span>{' '}
+                        <span className="text-green">ครบวงจร</span>{" "}
                         ลดค่าไฟสูงสุด 70%
                     </motion.h1>
 
