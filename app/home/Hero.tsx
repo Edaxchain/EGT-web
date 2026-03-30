@@ -39,7 +39,6 @@ export default function Hero() {
                 variants={containerVars}
             >
                 <div className="max-w-2xl flex flex-col">
-
                     {/* Headline */}
                     <motion.h1
                         variants={itemVars}
@@ -57,12 +56,8 @@ export default function Hero() {
                         variants={itemVars}
                         className="font-brand text-lg text-panel-dark-muted leading-relaxed mb-10 max-w-lg mx-auto lg:mx-0"
                     >
-                        AMEV is developing{" "}
-                        <span className="text-panel-dark-text">
-                            368 megawatts of renewable energy infrastructure
-                        </span>{" "}
-                        across Thailand and Southeast Asia — combining solar
-                        power generation with blockchain technology.
+                        นวัตกรรมด้านพลังงานเพื่อการเชื่อมต่อที่ยั่งยืน
+                        สู่การพัฒนาชุมชน ควบคุมโดยวิศวกรผู้เชี่ยวชาญกว่า 10 ปี
                     </motion.p>
 
                     {/* Buttons */}
