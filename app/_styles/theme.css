@@ -51,6 +51,6 @@
     --color-card: var(--surface);
     --color-card-foreground: var(--text-main);
 
-    --font-brand: "Prompt", sans-serif;
+    --font-brand: var(--font-prompt), sans-serif;
 
 }
