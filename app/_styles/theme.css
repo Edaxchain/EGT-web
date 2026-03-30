@@ -3,8 +3,12 @@
     --foreground: #1a1a1a;
     --surface: #f4f7f4;
     --text-main: #1a1a1a;
-    --text-sub: #1a6e1a;
     --text-main-inverted: #f0f0f0;
+    --text-sub: #747474;
+    --text-sub-inverted: #f0f0f0;
+    --green: #2ea82e;
+    --green-dark: #1a6e1a;
+    --green-light: #4cc44c;
     --brand-dominant: #2ea82e;
     --brand-strong: #1a6e1a;
     --brand-subtle: #dff5df;
@@ -18,8 +22,12 @@
     --foreground: #f0f0f0;
     --surface: #242824;
     --text-main: #f0f0f0;
-    --text-sub: #4dcc4d;
+    --text-sub: #a3a3a3;
     --text-main-inverted: #1a1a1a;
+    --text-sub-inverted: #a3a3a3;
+    --green: rgb(61, 221, 61);
+    --green-dark: #4cc44c;
+    --green-light: #1a6e1a;
     --brand-dominant: #2ea82e;
     --brand-strong: #4dcc4d;
     --brand-subtle: #242824;
@@ -32,8 +40,12 @@
     --color-background: var(--background);
     --color-foreground: var(--foreground);
     --color-text-main: var(--text-main);
-    --color-text-sub: var(--text-sub);
     --color-text-main-inverted: var(--text-main-inverted);
+    --color-text-sub: var(--text-sub);
+    --color-text-sub-inverted: var(--text-sub-inverted);
+    --color-green: var(--green);
+    --color-green-dark: var(--green-dark);
+    --color-green-light: var(--green-light);
     --color-border: var(--border);
     --color-brand-dominant: var(--brand-dominant);
     --color-brand-strong: var(--brand-strong);
@@ -52,5 +64,4 @@
     --color-card-foreground: var(--text-main);
 
     --font-brand: var(--font-prompt), sans-serif;
-
 }
