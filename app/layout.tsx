@@ -1,3 +1,6 @@
+import Navbar from "@/app/_components/layout/Navbar";
+import Footer from "@/app/_components/layout/Footer";
+import { ThemeProvider } from "@/app/_contexts/ThemeProvider";
 import type { Metadata } from "next";
 import Navbar from "@/app/_components/layout/Navbar";
 //import Footer from "@/app/_components/layout/Footer";
@@ -20,9 +23,9 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
   return (
         <html lang="th" className={prompt.variable} suppressHydrationWarning>
