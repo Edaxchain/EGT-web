@@ -2,7 +2,6 @@ import Navbar from "@/app/_components/layout/Navbar";
 import Footer from "@/app/_components/layout/Footer";
 import { ThemeProvider } from "@/app/_contexts/ThemeProvider";
 import type { Metadata } from "next";
-import Navbar from "@/app/_components/layout/Navbar";
 //import Footer from "@/app/_components/layout/Footer";
 //import { ThemeProvider } from "@/app/_contexts/ThemeProvider";
 //import { WalletContextProvider } from "@/app/contexts/WalletContextProvider";
@@ -30,28 +29,28 @@ export default function RootLayout({
   return (
         <html lang="th" className={prompt.variable} suppressHydrationWarning>
             <body>
-              {/*
+            
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="system"
                     enableSystem
                     disableTransitionOnChange
                 >
-                    
+                      {/*
                 <NextIntlClientProvider messages={messages}>
                     <WalletContextProvider>
                     */}
                     <Navbar />
 
                     <main>{children}</main>
-{/*
+
                     <Footer />
-                    
+                    {/*
                     </WalletContextProvider>
                 </NextIntlClientProvider>
-                
+                 */}
                 </ThemeProvider>
-                */}
+               
             </body>
         </html>
     );
