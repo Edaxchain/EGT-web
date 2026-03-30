@@ -9,12 +9,11 @@ import { ModeToggle } from "@/app/_components/ui/modeToggle";
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const menuItems = [
-        { title: "About", href: "/about" },
-        { title: "Project", href: "/project" },
-        { title: "Solutions", href: "/solutions" },
+        { title: "Home", href: "/" },
+        { title: "Services", href: "/services" },
         { title: "Technology", href: "/technology" },
-        { title: "Community", href: "/community" },
-        { title: "Partners", href: "/partners" },
+        { title: "Products", href: "/products" },
+        { title: "About Us", href: "/about" },
         { title: "Contact", href: "/contact" },
     ];
     return (
@@ -52,14 +51,6 @@ export default function Navbar() {
                         className="hidden lg:flex font-brand text-[12px] font-[500] text-text-sub border-border/60 hover:text-text-main hover:border-border h-auto py-[5px] px-[14px] rounded-[8px]"
                     >
                         <Link href="/">Login</Link>
-                    </Button>
-
-                    {/* Get quote button */}
-                    <Button
-                        asChild
-                        className="font-brand text-[11px] md:text-[12px] font-[700] text-button-primary-text bg-button-primary hover:bg-button-primary-hover hover:shadow-[0_0_0_3px_rgba(245,166,35,0.25),0_4px_20px_rgba(245,166,35,0.3)] hover:-translate-y-[0.5px] active:scale-[0.98] h-auto py-[6px] px-[10px] md:px-[16px] rounded-[8px] transition-all"
-                    >
-                        <Link href="/solutions#quote">Partner with us</Link>
                     </Button>
 
                     {/* Hamburger Button */}

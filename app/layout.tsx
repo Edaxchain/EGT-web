@@ -26,24 +26,21 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html
-            lang="en"
-            className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-        >
-            <ThemeProvider
-                attribute="class"
-                defaultTheme="system"
-                enableSystem
-                disableTransitionOnChange
+        <html lang="en">
+            <body
+                className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
             >
-                <body>
+                <ThemeProvider
+                    attribute="class"
+                    defaultTheme="system"
+                    enableSystem
+                    disableTransitionOnChange
+                >
                     <Navbar />
-
                     <main>{children}</main>
-
                     <Footer />
-                </body>
-            </ThemeProvider>
+                </ThemeProvider>
+            </body>
         </html>
     );
 }
