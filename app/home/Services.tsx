@@ -100,7 +100,7 @@ export default function Services() {
                     <motion.div
                         key={index}
                         variants={itemVars}
-                        className="text-center group relative border border-green p-8 rounded-3xl transition-all duration-300 flex flex-col items-center text-center hover:bg-green/5 hover:border-green hover:-translate-y-2 hover:shadow-2xl hover:shadow-green/5"
+                        className="text-center group relative border border-green p-8 rounded-3xl transition-all duration-300 flex flex-col items-center hover:bg-green/5 hover:border-green hover:-translate-y-2 hover:shadow-2xl hover:shadow-green/5"
                     >
                         <service.icon className="w-12 h-12 text-green/90 mb-6 transition-transform duration-300 group-hover:scale-110" />
                         <h3 className="text-xl font-bold mb-3 group-hover:text-green transition-colors">

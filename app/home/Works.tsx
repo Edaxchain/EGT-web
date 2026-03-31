@@ -97,13 +97,16 @@ export default function Works() {
                     <motion.div
                         key={index}
                         variants={itemVars}
-                        className="group relative border border-green p-8 rounded-[40px] transition-all duration-500 overflow-hidden hover:border-green/50 hover:shadow-2xl hover:shadow-green/10"
+                        className="group relative border border-green p-8 rounded-[40px] transition-all duration-500 overflow-hidden hover:-translate-y-2 hover:shadow-2xl hover:shadow-green/5"
                     >
                         {/* Title & Capacity */}
-                        <div className="flex justify-between items-start mb-6">
-                            <h3 className="text-2xl font-bold group-hover:text-green transition-colors">
-                                {project.title}
-                            </h3>
+                        <div className="flex justify-between items-start mb-6 relative z-10">
+                            <div className="flex flex-col gap-1">
+                                <project.icon className="w-12 h-12 text-green mb-4 transition-transform duration-300 group-hover:scale-110" />
+                                <h3 className="text-2xl font-bold group-hover:text-green transition-colors">
+                                    {project.title}
+                                </h3>
+                            </div>
                             <div className="bg-green/10 text-green px-4 py-1.5 rounded-full text-sm font-bold border border-green/20">
                                 {project.subtitle}
                             </div>
