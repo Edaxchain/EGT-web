@@ -60,8 +60,8 @@ export default function InstallationSteps() {
     ]
 
     return (
-        <section className="py-12 bg-background">
-            <div className="max-w-7xl mx-auto px-6">
+        <section className="py-24 px-8 md:px-12 lg:px-48 bg-background">
+            <div className="max-w-7xl mx-auto">
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
@@ -85,14 +85,14 @@ export default function InstallationSteps() {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.2 }}
-                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10"
+                        className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6 relative z-10"
                     >
                         {steps.map((step) => (
                             <motion.div
                                 key={step.id}
                                 variants={itemVars}
                                 className="h-full flex">
-                                <Card className="relative overflow-hidden border-border bg-surface rounded-[2rem] transition-all duration-300 hover:shadow-xl group h-full flex flex-col w-full">                                    <CardHeader className="pb-4 shrink-0">
+                                <Card className="relative overflow-hidden border-border bg-surface rounded-4xl transition-all duration-300 hover:shadow-xl group h-full flex flex-col w-full">                                    <CardHeader className="pb-4 shrink-0">
                                     {/* Icon Badge */}
                                     <div className={`w-12 h-12 ${step.color} text-text-main rounded-2xl flex items-center justify-center mb-4 shadow-md transition-transform group-hover:scale-110`}>
                                         {step.icon}

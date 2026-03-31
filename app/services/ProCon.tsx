@@ -23,7 +23,7 @@ export default function ProCons() {
 
   return (
     <section className="py-12 bg-background overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto">
         
         {/* Header Section */}
         <motion.div 
