@@ -57,7 +57,7 @@ export default function Works() {
     return (
         <section
             id="works"
-            className="relative w-full overflow-hidden py-24 px-8 md:px-12 lg:px-48"
+            className="relative w-full overflow-hidden py-24 px-8 md:px-12 lg:px-48 bg-background"
         >
             <motion.div
                 className="w-full relative z-10 text-center mb-16"

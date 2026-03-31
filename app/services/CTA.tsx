@@ -6,7 +6,7 @@ export default function CTAS() {
     return (
         <section
             id="CTA"
-            className="relative overflow-hidden bg-brand-subtle py-16 px-6">
+            className="relative overflow-hidden bg-brand-subtle py-24 px-8 md:px-12 lg:px-48">
             {/* Background Pattern (Dot Grid) */}
             <div
                 className="absolute inset-0 pointer-events-none opacity-10"

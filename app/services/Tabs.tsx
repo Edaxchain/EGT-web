@@ -13,8 +13,8 @@ export default function ServiceTabs() {
     return (
         <section
         id="package"
-        className="py-24 bg-background overflow-hidden">
-            <div className="max-w-7xl mx-auto px-6">
+        className="py-24 px-8 md:px-12 lg:px-48 bg-background overflow-hidden">
+            <div className="max-w-7xl mx-auto">
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
@@ -69,7 +69,7 @@ export default function ServiceTabs() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 variants={containerVars}
-                className="mt-12 max-w-4xl mx-auto px-6"
+                className="mt-12 max-w-4xl mx-auto"
             >
                 <div className="text-center mb-10">
                     <h3 className="text-3xl font-black text-brand-strong italic">
@@ -90,7 +90,7 @@ export default function ServiceTabs() {
                         {(activeTab === "solar" ? solarConditions : EVConditions).additionalCosts.map((cost, i) => (
                             <div
                                 key={i}
-                                className="flex flex-col md:grid md:grid-cols-[1fr_250px] px-6 py-5 md:px-8 md:py-4 hover:bg-surface/30 transition-all gap-2 md:gap-0"
+                                className="flex flex-col md:grid md:grid-cols-[1fr_250px] py-5 md:px-8 md:py-4 hover:bg-surface/30 transition-all gap-2 md:gap-0"
                             >
                                 <div className="text-sm text-text-main font-medium flex items-start leading-relaxed">
                                     <span className="text-brand-dominant mr-3 font-bold shrink-0">{i + 1}.</span>

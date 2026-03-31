@@ -9,7 +9,7 @@ import { PackageItem } from "./ServiceData"
 
 export default function PackageGrid({ data }: { data: PackageItem[] }) {
   return (
-    <div className="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
       {data.map((pkg) => (
         <motion.div key={pkg.id} variants={itemVars} className="h-full flex">
           <Card className="relative flex flex-col h-full w-full rounded-[2.5rem] overflow-hidden border-border transition-all duration-500 hover:shadow-2xl hover:-translate-y-1">
@@ -30,7 +30,7 @@ export default function PackageGrid({ data }: { data: PackageItem[] }) {
               </CardTitle>
             </CardHeader>
 
-            <CardContent className="p-6 pt-0 flex-grow flex flex-col">
+            <CardContent className="pt-0 grow flex flex-col">
               <div className="space-y-4">
                 <div className="bg-surface/50 p-4 rounded-2xl border border-border">
                   <div className="flex items-center gap-3 text-brand-strong font-bold text-sm mb-1">

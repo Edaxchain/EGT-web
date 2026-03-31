@@ -58,13 +58,13 @@ export default function Hero() {
                             src={heroDark}
                             alt="Solar Hero Dark"
                             fill
-                            className="object-cover opacity-60"
+                            className="object-cover opacity-80"
                             priority
                             style={{
                                 maskImage:
-                                    "linear-gradient(to left, black 20%, transparent 80%)",
+                                    "linear-gradient(to left, black 20%, transparent 95%)",
                                 WebkitMaskImage:
-                                    "linear-gradient(to left, black 20%, transparent 80%)",
+                                    "linear-gradient(to left, black 20%, transparent 95%)",
                             }}
                         />
                     </div>
