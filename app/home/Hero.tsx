@@ -102,16 +102,13 @@ export default function Hero() {
                         variants={itemVars}
                         className="flex flex-wrap justify-center lg:justify-start gap-4 w-full"
                     >
-                        <Button
-                            asChild
-                            className="text-lg bg-green text-text-main-inverted rounded-[10px] h-[52px] px-8 shadow-lg shadow-amber/10 transition-all hover:-translate-y-1"
-                        >
+                        <Button asChild className="text-xl h-[52px] px-8">
                             <Link href="#">ขอใบเสนอราคา</Link>
                         </Button>
                         <Button
                             asChild
                             variant="outline"
-                            className="text-lg border-green-dark text-green-dark hover:text-green-dark hover:border-green-dark rounded-full h-[52px] px-8 hover:bg-green-dark/20 transition-all hover:-translate-y-1"
+                            className="text-xl h-[52px] px-8"
                         >
                             <Link href="#">ปรึกษาฟรี</Link>
                         </Button>

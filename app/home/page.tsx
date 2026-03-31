@@ -2,6 +2,7 @@ import Hero from "./Hero";
 import Services from "./Services";
 import Works from "./Works";
 import Technology from "./Technology";
+import Contact from "./Contact";
 
 export default function LandingPage() {
     return (
@@ -10,6 +11,7 @@ export default function LandingPage() {
             <Services />
             <Technology />
             <Works />
+            <Contact />
         </main>
     );
 }
