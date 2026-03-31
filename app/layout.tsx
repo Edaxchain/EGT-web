@@ -29,13 +29,14 @@ export default function RootLayout({
     return (
         <html lang="th" className={prompt.variable} suppressHydrationWarning>
             <body>
+            
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="system"
                     enableSystem
                     disableTransitionOnChange
                 >
-                    {/*
+                      {/*
                 <NextIntlClientProvider messages={messages}>
                     <WalletContextProvider>
                     */}
@@ -47,9 +48,9 @@ export default function RootLayout({
                     
                     </WalletContextProvider>
                 </NextIntlClientProvider>
-                
-                */}
+                 */}
                 </ThemeProvider>
+               
             </body>
         </html>
     );

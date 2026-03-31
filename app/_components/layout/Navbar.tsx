@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Sun, Menu, X } from "lucide-react";
+import { Leaf, Menu, X } from "lucide-react";
 import { Button } from "@/app/_components/ui/button";
 import { ModeToggle } from "@/app/_components/ui/modeToggle";
 
@@ -20,11 +20,11 @@ export default function Navbar() {
         <>
             <nav className="h-[62px] flex items-center justify-between px-[10vw] mx-auto border-b border-border bg-background sticky top-0 z-100 transition-colors">
                 {/* Logo */}
-                <div className="flex items-center gap-[9px] font-brand text-[18px] font-900 text-text-main tracking-[-0.3px] cursor-pointer group shrink-0">
-                    <div className="logo-sun w-[28px] h-[28px] rounded-full bg-amber flex items-center justify-center transition-all duration-300 group-hover:shadow-[0_0_0_4px_rgba(245,166,35,0.2),0_0_16px_rgba(245,166,35,0.3)]">
-                        <Sun size={16} strokeWidth={2.5} fill="currentColor" />
+                <div className="flex items-center gap-[9px] font-brand text-[18px] font-[900] text-text-main tracking-[-0.3px] cursor-pointer group shrink-0">
+                    <div className="logo-sun w-[28px] h-[28px] rounded-full bg-brand-subtle flex items-center justify-center transition-all duration-300 group-hover:shadow-(var(--card-shadow)),0_0_16px_(var(--card-shadow))]">
+                        <Leaf size={16} strokeWidth={2.5} fill="currentColor" />
                     </div>
-                    <span className="block uppercase"> AMEV </span>
+                    <span className="block uppercase"> Energy Trutol </span>
                 </div>
 
                 {/* Desktop Menu */}
@@ -34,7 +34,7 @@ export default function Navbar() {
                             key={item.title}
                             asChild
                             variant="ghost"
-                            className="font-brand text-[12px] font-[500] text-text-sub hover:bg-foreground/10 hover:text-text-main h-auto py-[5px] px-[14px] rounded-[8px]"
+                            className="font-brand text-[12px] font-[500] text-text-main hover:bg-foreground/10 hover:text-brand-dominant h-auto py-[5px] px-[14px] rounded-[8px]"
                         >
                             <Link href={item.href}>{item.title}</Link>
                         </Button>
