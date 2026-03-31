@@ -8,17 +8,17 @@ import type { Metadata } from "next";
 //import { NextIntlClientProvider } from "next-intl";
 //import { getMessages } from "next-intl/server";
 import "./globals.css";
-import { Prompt } from 'next/font/google'
+import { Prompt } from "next/font/google";
 
 const prompt = Prompt({
-  weight: ['300', '400', '500', '600', '700'],
-  subsets: ['latin', 'thai'],
-  display: 'swap',
-  variable: '--font-prompt',
+    weight: ["300", "400", "500", "600", "700"],
+    subsets: ["latin", "thai"],
+    display: "swap",
+    variable: "--font-prompt",
 });
 export const metadata: Metadata = {
-  title: "Energy Trutol",
-  description: "นวัตกรรมด้านพลังงานเพื่อการเชื่อมต่อที่ยั่งยืน",
+    title: "Energy Trutol",
+    description: "นวัตกรรมด้านพลังงานเพื่อการเชื่อมต่อที่ยั่งยืน",
 };
 
 export default function RootLayout({
@@ -26,7 +26,7 @@ export default function RootLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
-  return (
+    return (
         <html lang="th" className={prompt.variable} suppressHydrationWarning>
             <body>
             
