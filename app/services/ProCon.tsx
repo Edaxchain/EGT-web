@@ -33,7 +33,7 @@ export default function ProCons() {
           variants={itemVars}
           className="text-center mb-8"
         >
-          <h2 className="text-4xl font-extrabold text-brand-strong italic mb-4">
+          <h2 className="text-4xl font-extrabold text-brand-strong mb-4">
             เจาะลึก ข้อดี & ข้อควรพิจารณา
           </h2>
           <p className="text-text-sub font-light">ข้อมูลจริงเพื่อประกอบการตัดสินใจก่อนการลงทุน</p>
