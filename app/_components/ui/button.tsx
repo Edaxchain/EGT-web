@@ -12,7 +12,7 @@ const buttonVariants = cva(
                 default:
                     "bg-green text-text-main-inverted rounded-[10px] shadow-lg shadow-amber/10 transition-all hover:-translate-y-1",
                 outline:
-                    "bg-white text-black hover:text-black rounded-[20px] h-[72px] px-12 transition-all hover:-translate-y-1 shadow-sm",
+                    "bg-background-static text-black hover:text-black rounded-[20px] h-[72px] px-12 transition-all hover:-translate-y-1 shadow-sm",
                 primary:
                     "bg-black text-white hover:bg-black/80 rounded-[20px] transition-all hover:-translate-y-1 shadow-2xl",
                 destructive:

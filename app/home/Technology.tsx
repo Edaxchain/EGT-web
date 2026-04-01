@@ -72,7 +72,7 @@ export default function Technology() {
                         >
                             ขับเคลื่อนพลังงาน ด้วยนวัตกรรม
                             <br />
-                            <span className="text-white">Fintech</span>
+                            <span className="text-background-static">Fintech</span>
                         </motion.h2>
                         <motion.p
                             variants={itemVars}
@@ -121,7 +121,7 @@ export default function Technology() {
                     viewport={{ once: true }}
                     transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                 >
-                    <div className="relative bg-[#F8F9FA] dark:bg-[#1A1A1A] p-8 md:p-10 rounded-[40px] shadow-2xl border border-black/5 dark:border-white/5 overflow-hidden">
+                    <div className="relative bg-background p-8 md:p-10 rounded-[40px] shadow-2xl border border-foreground/50 dark:border-foreground/50 overflow-hidden">
                         {/* Dashboard Header */}
                         <div className="flex justify-between items-center mb-10">
                             <div>
@@ -150,7 +150,7 @@ export default function Technology() {
 
                         {/* Secondary Stats */}
                         <div className="grid grid-cols-2 gap-6 mb-10">
-                            <div className="p-5 bg-white dark:bg-white/5 rounded-3xl border border-black/5 dark:border-white/10">
+                            <div className="p-5 bg-background rounded-3xl border border-foreground/50">
                                 <p className="text-[10px] font-bold text-text-sub uppercase mb-2">
                                     ประสิทธิภาพ
                                 </p>
@@ -161,7 +161,7 @@ export default function Technology() {
                                     </span>
                                 </div>
                             </div>
-                            <div className="p-5 bg-white dark:bg-white/5 rounded-3xl border border-black/5 dark:border-white/10">
+                            <div className="p-5 bg-background rounded-3xl border border-foreground/50">
                                 <p className="text-[10px] font-bold text-text-sub uppercase mb-2">
                                     ประหยัดวันนี้
                                 </p>
@@ -198,7 +198,7 @@ export default function Technology() {
                         </div>
 
                         {/* Carbon Footprint */}
-                        <div className="mt-10 pt-8 border-t border-black/5 dark:border-white/5 flex items-center justify-between">
+                        <div className="mt-10 pt-8 border-t border-foreground/50 flex items-center justify-between">
                             <div className="flex items-center gap-4">
                                 <div className="p-3 bg-green/10 rounded-xl">
                                     <Leaf className="w-5 h-5 text-green" />

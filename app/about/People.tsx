@@ -71,11 +71,13 @@ export default function People() {
                 <div className="max-w-3xl mx-auto">
                     <motion.h1
                         variants={itemVars}
-                        className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 text-black tracking-tight"
+                        className="text-4xl sm:text-5xl md:text-6xl font-black text-black mb-6 tracking-tight"
                     >
                         ผู้เชี่ยวชาญที่อยู่เบื้องหลัง
                         <br />
-                        <span className="text-white">ความสำเร็จ</span>
+                        <span className="text-background-static">
+                            ความสำเร็จ
+                        </span>
                     </motion.h1>
 
                     <motion.p

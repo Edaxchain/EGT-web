@@ -43,7 +43,7 @@ export default function Contact() {
                         >
                             เริ่มต้นประหยัดพลังงานวันนี้
                             <br />
-                            <span className="text-white">
+                            <span className="text-background-static">
                                 ให้เราช่วยออกแบบระบบที่เหมาะกับคุณ
                             </span>
                         </motion.h2>

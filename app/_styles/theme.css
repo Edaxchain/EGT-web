@@ -1,5 +1,6 @@
 :root {
     --background: #ffffff;
+    --background-static: #ffffff;
     --foreground: #1a1a1a;
     --surface: #f4f7f4;
     --text-main: #1a1a1a;
@@ -38,6 +39,7 @@
 
 @theme {
     --color-background: var(--background);
+    --color-background-static: var(--background-static);
     --color-foreground: var(--foreground);
     --color-text-main: var(--text-main);
     --color-text-main-inverted: var(--text-main-inverted);
