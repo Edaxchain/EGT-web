@@ -87,7 +87,7 @@ export default function Works() {
 
             {/* Grid */}
             <motion.div
-                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10"
+                className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 relative z-10"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -100,7 +100,7 @@ export default function Works() {
                         className={`group relative border border-green p-8 rounded-[40px] transition-all duration-500 overflow-hidden hover:-translate-y-2 hover:shadow-2xl hover:shadow-green/5 ${
                             index === projects.length - 1 &&
                             projects.length % 2 !== 0
-                                ? "sm:max-lg:col-span-2 sm:max-lg:w-full sm:max-lg:max-w-[calc(50%-16px)] sm:max-lg:justify-self-center"
+                                ? "sm:max-xl:col-span-2 sm:max-xl:w-full sm:max-xl:max-w-[calc(50%-16px)] sm:max-xl:justify-self-center"
                                 : ""
                         }`}
                     >
