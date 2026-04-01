@@ -54,7 +54,7 @@ export default function Technology() {
     return (
         <section
             id="technology"
-            className="relative w-full overflow-hidden py-24 px-8 md:px-12 lg:px-48 bg-[#4cc44c] transition-colors duration-500"
+            className="relative w-full overflow-hidden py-24 px-8 md:px-12 lg:px-48 bg-[#4cc44c]"
         >
             <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-16 items-center">
                 {/* Left Side: Content */}
