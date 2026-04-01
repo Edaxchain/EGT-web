@@ -73,7 +73,9 @@ export default function People() {
                         variants={itemVars}
                         className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 text-black tracking-tight"
                     >
-                        ผู้เชี่ยวชาญที่อยู่เบื้องหลังความสำเร็จ
+                        ผู้เชี่ยวชาญที่อยู่เบื้องหลัง
+                        <br />
+                        <span className="text-white">ความสำเร็จ</span>
                     </motion.h1>
 
                     <motion.p
