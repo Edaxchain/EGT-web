@@ -1,7 +1,15 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { Home, Zap, Battery, RefreshCcw, Car, Globe } from "lucide-react";
+import {
+    Home,
+    Zap,
+    Battery,
+    RefreshCcw,
+    Car,
+    Globe,
+    ArrowRight,
+} from "lucide-react";
 
 const services = [
     {
@@ -90,7 +98,7 @@ export default function Services() {
 
             {/* Grid */}
             <motion.div
-                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10"
+                className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 relative z-10"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -100,13 +108,36 @@ export default function Services() {
                     <motion.div
                         key={index}
                         variants={itemVars}
-                        className="text-center group relative bg-green/5 border-2 border-green/10 p-8 rounded-3xl transition-all duration-300 flex flex-col items-center hover:border-green/50 hover:-translate-y-2 hover:shadow-2xl hover:shadow-green/5"
+                        className="text-left group relative bg-surface border-2 border-green/10 p-10 rounded-[2.5rem] transition-[transform,background-color,border-color,box-shadow] duration-500 flex flex-col items-start hover:border-green/40 hover:-translate-y-3 hover:shadow-2xl hover:shadow-green/10 overflow-hidden will-change-transform"
                     >
-                        <service.icon className="w-12 h-12 text-green/80 mb-6 transition-transform duration-300 group-hover:scale-110" />
-                        <h3 className="text-xl font-bold mb-3 group-hover:text-green transition-colors">
-                            {service.title}
-                        </h3>
-                        <p>{service.description}</p>
+                        {/* Decorative Background Index */}
+                        <span className="absolute -top-4 -right-2 text-8xl font-black text-green/5 select-none group-hover:text-green/10 transition-colors duration-500">
+                            {index + 1 < 10 ? `0${index + 1}` : index + 1}
+                        </span>
+
+                        {/* Icon Container */}
+                        <div className="relative mb-8">
+                            <service.icon className="w-12 h-12 text-green/80 mb-6 transition-transform duration-300 group-hover:scale-125" />
+                        </div>
+
+                        {/* Content */}
+                        <div className="space-y-4 relative z-10">
+                            <h3 className="text-2xl font-black text-text-main group-hover:text-green transition-colors duration-300">
+                                {service.title}
+                            </h3>
+                            <p className="text-text-sub text-base leading-relaxed group-hover:text-text-main transition-colors duration-300">
+                                {service.description}
+                            </p>
+                        </div>
+
+                        {/* Bottom Interaction */}
+                        <div className="mt-8 flex items-center gap-2 text-green font-bold text-sm opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500">
+                            <span>DETAILS</span>
+                            <ArrowRight className="w-4 h-4" />
+                        </div>
+
+                        {/* Hover Border Glow */}
+                        <div className="absolute bottom-0 left-0 h-1 w-0 bg-green group-hover:w-full transition-all duration-700 ease-out" />
                     </motion.div>
                 ))}
             </motion.div>
