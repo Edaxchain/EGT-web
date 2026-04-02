@@ -10,6 +10,7 @@ import {
     TrendingUp,
     Leaf,
 } from "lucide-react";
+import BackgroundDecoration from "@/app/_components/ui/backgroundDecoration";
 
 export default function Technology() {
     const containerVars = {
@@ -56,6 +57,7 @@ export default function Technology() {
             id="technology"
             className="relative w-full overflow-hidden py-24 px-8 md:px-12 lg:px-48 bg-green-light"
         >
+            <BackgroundDecoration variant="line" />
             <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-16 items-center">
                 {/* Left Side: Content */}
                 <motion.div

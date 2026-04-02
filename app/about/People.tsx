@@ -2,6 +2,7 @@
 
 import { motion, Variants } from "framer-motion";
 import { User, GraduationCap, Briefcase } from "lucide-react";
+import BackgroundDecoration from "@/app/_components/ui/backgroundDecoration";
 
 interface TeamMember {
     name: string;
@@ -61,6 +62,7 @@ export default function People() {
             id="people"
             className="relative w-full overflow-hidden py-24 px-8 md:px-12 lg:px-48 bg-green-light"
         >
+            <BackgroundDecoration variant="line"/>
             <motion.div
                 className="w-full relative z-10 text-center mb-16"
                 initial="hidden"

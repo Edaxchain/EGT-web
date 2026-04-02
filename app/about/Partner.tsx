@@ -12,6 +12,7 @@ import {
     Zap,
     HeartPulse,
 } from "lucide-react";
+import BackgroundDecoration from "@/app/_components/ui/backgroundDecoration";
 
 interface Partner {
     name: string;
@@ -71,6 +72,7 @@ export default function Partner() {
             id="partner"
             className="relative w-full overflow-hidden py-24 px-8 md:px-12 lg:px-48 bg-background"
         >
+            <BackgroundDecoration variant="glow"/>
             <motion.div
                 className="w-full relative z-10 text-center mb-16"
                 initial="hidden"
