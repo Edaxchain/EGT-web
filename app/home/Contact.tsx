@@ -25,7 +25,7 @@ export default function Contact() {
     return (
         <section
             id="contact"
-            className="relative w-full overflow-hidden py-24 px-8 md:px-12 lg:px-48 bg-[#4cc44c] transition-colors duration-500"
+            className="relative w-full overflow-hidden py-24 px-8 md:px-12 lg:px-48 bg-green-light transition-colors duration-500"
         >
             <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-16 items-center">
                 {/* Left Side: Content */}
@@ -39,7 +39,7 @@ export default function Contact() {
                     <div className="space-y-6">
                         <motion.h2
                             variants={itemVars}
-                            className="text-3xl md:text-5xl lg:text-5xl font-black text-black leading-tight"
+                            className="text-3xl md:text-5xl lg:text-5xl font-black text-text-main-static leading-tight"
                         >
                             เริ่มต้นประหยัดพลังงานวันนี้
                             <br />
@@ -49,7 +49,7 @@ export default function Contact() {
                         </motion.h2>
                         <motion.p
                             variants={itemVars}
-                            className="text-lg text-black/75 max-w-xl leading-relaxed"
+                            className="text-lg text-text-sub-static max-w-xl leading-relaxed"
                         >
                             ขอรับการประเมินและใบเสนอราคาฟรี ไม่มีค่าใช้จ่าย
                             ทีมวิศวกรผู้เชี่ยวชาญพร้อมให้คำปรึกษาตลอด 24 ชั่วโมง

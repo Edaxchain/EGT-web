@@ -108,7 +108,7 @@ export default function Us() {
 
                         <motion.p
                             variants={itemVars}
-                            className="text-lg text-panel-dark-muted leading-relaxed mb-10 max-w-lg lg:mx-0"
+                            className="text-lg text-text-sub leading-relaxed mb-10 max-w-lg lg:mx-0"
                         >
                             Green Energy Solutions ก่อตั้งขึ้นในปี 2557
                             ด้วยความมุ่งมั่นที่จะเปลี่ยนแปลงวิธีที่ประเทศไทยผลิตและใช้พลังงาน

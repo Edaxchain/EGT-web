@@ -59,7 +59,7 @@ export default function People() {
     return (
         <section
             id="people"
-            className="relative w-full overflow-hidden py-24 px-8 md:px-12 lg:px-48 bg-[#4cc44c]"
+            className="relative w-full overflow-hidden py-24 px-8 md:px-12 lg:px-48 bg-green-light"
         >
             <motion.div
                 className="w-full relative z-10 text-center mb-16"
@@ -71,7 +71,7 @@ export default function People() {
                 <div className="max-w-3xl mx-auto">
                     <motion.h1
                         variants={itemVars}
-                        className="text-4xl sm:text-5xl md:text-6xl font-black text-black mb-6 tracking-tight"
+                        className="text-4xl sm:text-5xl md:text-6xl font-black text-text-main-static mb-6 tracking-tight"
                     >
                         ผู้เชี่ยวชาญที่อยู่เบื้องหลัง
                         <br />
@@ -82,7 +82,7 @@ export default function People() {
 
                     <motion.p
                         variants={itemVars}
-                        className="text-lg text-black/80 max-w-2xl mx-auto leading-relaxed"
+                        className="text-lg text-text-sub-static max-w-2xl mx-auto leading-relaxed"
                     >
                         ทีมวิศวกรและผู้เชี่ยวชาญด้านพลังงานที่มีประสบการณ์และความหลงใหลในการสร้างอนาคตพลังงานสะอาด
                     </motion.p>

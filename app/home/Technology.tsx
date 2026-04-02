@@ -54,7 +54,7 @@ export default function Technology() {
     return (
         <section
             id="technology"
-            className="relative w-full overflow-hidden py-24 px-8 md:px-12 lg:px-48 bg-[#4cc44c]"
+            className="relative w-full overflow-hidden py-24 px-8 md:px-12 lg:px-48 bg-green-light"
         >
             <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-16 items-center">
                 {/* Left Side: Content */}
@@ -68,15 +68,17 @@ export default function Technology() {
                     <div className="space-y-6">
                         <motion.h2
                             variants={itemVars}
-                            className="text-3xl md:text-5xl lg:text-6xl font-black text-black leading-tight"
+                            className="text-3xl md:text-5xl lg:text-6xl font-black text-text-main-static leading-tight"
                         >
                             ขับเคลื่อนพลังงาน ด้วยนวัตกรรม
                             <br />
-                            <span className="text-background-static">Fintech</span>
+                            <span className="text-background-static">
+                                Fintech
+                            </span>
                         </motion.h2>
                         <motion.p
                             variants={itemVars}
-                            className="text-lg text-black/75 max-w-xl leading-relaxed"
+                            className="text-lg text-text-sub-static max-w-xl leading-relaxed"
                         >
                             Energy Block แพลตฟอร์ม X-Pal Bridge
                             บริหารจัดการพลังงานแบบออนไลน์ โปร่งใส ตรวจสอบได้

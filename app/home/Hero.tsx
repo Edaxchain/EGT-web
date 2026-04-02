@@ -91,7 +91,7 @@ export default function Hero() {
 
                     <motion.p
                         variants={itemVars}
-                        className="text-lg text-panel-dark-muted leading-relaxed mb-10 max-w-lg mx-auto lg:mx-0"
+                        className="text-lg leading-relaxed mb-10 max-w-lg mx-auto lg:mx-0"
                     >
                         นวัตกรรมด้านพลังงานเพื่อการเชื่อมต่อที่ยั่งยืน
                         สู่การพัฒนาชุมชน ควบคุมโดยวิศวกรผู้เชี่ยวชาญกว่า 10 ปี
