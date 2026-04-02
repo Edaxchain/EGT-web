@@ -15,6 +15,8 @@
     --brand-subtle: #dff5df;
     --border: #d0e0d0;
     --input-bg: #ffffff;
+    --panel-dark: #1f1f1f;
+    --panel-dark-text: #f0f0f0;
     --card-shadow: rgba(26, 110, 26, 0.05);
 }
 
@@ -34,7 +36,10 @@
     --brand-subtle: #242824;
     --border: #2e3e2e;
     --input-bg: #1f1f1f;
+    --panel-dark: #1f1f1f;
+    --panel-dark-text: #f0f0f0;
     --card-shadow: rgba(0, 0, 0, 0.3);
+
 }
 
 @theme {
@@ -53,6 +58,8 @@
     --color-brand-strong: var(--brand-strong);
     --color-brand-subtle: var(--brand-subtle);
     --color-input-bg: var(--input-bg);
+    --color-panel-dark: var(--panel-dark);
+    --color-panel-dark-text: var(--panel-dark-text);
     --color-card-shadow: var(--card-shadow);
 
     /*shadcn var*/
