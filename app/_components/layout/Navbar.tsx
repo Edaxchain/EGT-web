@@ -34,7 +34,7 @@ export default function Navbar() {
                             key={item.title}
                             asChild
                             variant="ghost"
-                            className="font-brand text-[12px] font-[500] text-text-main hover:bg-foreground/10 hover:text-brand-dominant h-auto py-[5px] px-[14px] rounded-[8px]"
+                            className="font-brand text-[12px] font-medium text-text-main hover:bg-foreground/10 hover:text-brand-dominant h-auto py-[5px] px-[14px] rounded-[8px]"
                         >
                             <Link href={item.href}>{item.title}</Link>
                         </Button>
@@ -48,7 +48,7 @@ export default function Navbar() {
                     <Button
                         variant="outline"
                         asChild
-                        className="hidden lg:flex font-brand text-[12px] font-[500] text-text-sub border-border/60 hover:text-text-main hover:border-border h-auto py-[5px] px-[14px] rounded-[8px]"
+                        className="hidden lg:flex font-brand text-[12px] font-medium text-text-sub border-border/60 hover:text-text-main hover:border-border h-auto py-[5px] px-[14px] rounded-[8px]"
                     >
                         <Link href="/">Login</Link>
                     </Button>
@@ -72,7 +72,7 @@ export default function Navbar() {
             {/* Mobile Menu */}
             <div
                 className={`
-                fixed inset-0 z-[90] bg-background backdrop-blur-xl transition-all duration-300 lg:hidden
+                fixed inset-0 z-90 bg-background backdrop-blur-xl transition-all duration-300 lg:hidden
                 ${isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full pointer-events-none"}
             `}
             >
