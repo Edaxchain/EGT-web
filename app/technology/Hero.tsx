@@ -105,7 +105,7 @@ export default function Hero() {
                             variants={containerVars}
                         >
                             <motion.h1
-                                className="text-4xl lg:text-5xl leading-tight tracking-tighter font-black"
+                                className="text-4xl lg:text-5xl leading-tight tracking-tighter font-bold text-brand-dominant italic"
                                 variants={itemVars}>
                                 Service Adaptive Connect
                             </motion.h1>
