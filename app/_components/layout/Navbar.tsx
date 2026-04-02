@@ -18,9 +18,9 @@ export default function Navbar() {
     ];
     return (
         <>
-            <nav className="h-[62px] flex items-center justify-between px-[10vw] mx-auto border-b border-border bg-background sticky top-0 z-100 transition-colors">
+            <nav className="h-[80px] flex items-center justify-between px-[10vw] mx-auto border-b border-border bg-background sticky top-0 z-100 transition-colors">
                 {/* Logo */}
-                <div className="flex items-center gap-[9px] font-brand text-[18px] font-[900] text-text-main tracking-[-0.3px] cursor-pointer group shrink-0">
+                <div className="flex items-center gap-[9px] font-brand text-[18px] font-black text-text-main tracking-[-0.3px] cursor-pointer group shrink-0">
                     <div className="logo-sun w-[28px] h-[28px] rounded-full bg-brand-subtle flex items-center justify-center transition-all duration-300 group-hover:shadow-(var(--card-shadow)),0_0_16px_(var(--card-shadow))]">
                         <Leaf size={16} strokeWidth={2.5} fill="currentColor" />
                     </div>
@@ -34,7 +34,7 @@ export default function Navbar() {
                             key={item.title}
                             asChild
                             variant="ghost"
-                            className="font-brand text-[12px] font-medium text-text-main hover:bg-foreground/10 hover:text-brand-dominant h-auto py-[5px] px-[14px] rounded-[8px]"
+                            className="font-brand text-md px-[14px]"
                         >
                             <Link href={item.href}>{item.title}</Link>
                         </Button>
@@ -46,9 +46,8 @@ export default function Navbar() {
                     <ModeToggle />
                     {/* Login Button */}
                     <Button
-                        variant="outline"
                         asChild
-                        className="hidden lg:flex font-brand text-[12px] font-medium text-text-sub border-border/60 hover:text-text-main hover:border-border h-auto py-[5px] px-[14px] rounded-[8px]"
+                        className="hidden lg:flex font-brand text-lg px-[24px] hover:translate-y-0 font-medium"
                     >
                         <Link href="/">Login</Link>
                     </Button>

@@ -99,7 +99,7 @@ export default function Works() {
                     <motion.div
                         key={index}
                         variants={itemVars}
-                        className={`group relative border border-green p-8 rounded-[40px] transition-all duration-500 overflow-hidden hover:-translate-y-2 hover:shadow-2xl hover:shadow-green/5 ${
+                        className={`group relative border-2 border-green/10 p-8 rounded-[40px] transition-all duration-500 overflow-hidden hover:-translate-y-2 hover:shadow-2xl hover:shadow-green/10 hover:border-green/40 ${
                             index === projects.length - 1 &&
                             projects.length % 2 !== 0
                                 ? "sm:max-xl:col-span-2 sm:max-xl:w-full sm:max-xl:max-w-[calc(50%-16px)] sm:max-xl:justify-self-center"

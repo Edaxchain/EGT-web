@@ -18,7 +18,7 @@ const buttonVariants = cva(
                 destructive:
                     "bg-red-500 text-white hover:bg-red-600 rounded-2xl transition-all hover:-translate-y-1 shadow-2xl",
                 link: "text-primary underline-offset-4 hover:underline",
-                ghost: "hover:bg-foreground/5 hover:text-green",
+                ghost: "text-text-main hover:text-green",
             },
             size: {
                 default:
@@ -27,11 +27,9 @@ const buttonVariants = cva(
                 sm: "h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] in-data-[slot=button-group]:rounded-lg has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 [&_svg:not([class*='size-'])]:size-3.5",
                 lg: "h-9 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-3 has-data-[icon=inline-start]:pl-3",
                 icon: "size-8",
-                "icon-xs":
-                    "size-6 rounded-[min(var(--radius-md),10px)] in-data-[slot=button-group]:rounded-lg [&_svg:not([class*='size-'])]:size-3",
-                "icon-sm":
-                    "size-7 rounded-[min(var(--radius-md),12px)] in-data-[slot=button-group]:rounded-lg",
-                "icon-lg": "size-9",
+                "icon-sm": "size-7 rounded-md [&_svg]:size-3.5",
+                "icon-md": "size-10 rounded-lg [&_svg]:size-5",
+                "icon-lg": "size-12 rounded-xl [&_svg]:size-6",
             },
         },
         defaultVariants: {

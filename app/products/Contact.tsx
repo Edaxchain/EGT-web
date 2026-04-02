@@ -3,7 +3,7 @@
 import { motion, Variants } from "framer-motion";
 import { Button } from "@/app/_components/ui/button";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import BackgroundDecoration from "@/app/_components/ui/backgroundDecoration";
 
 export default function Contact() {
     const containerVars = {
@@ -28,6 +28,7 @@ export default function Contact() {
             id="contact"
             className="relative w-full overflow-hidden py-24 px-8 md:px-12 lg:px-48 bg-green-light transition-colors duration-500"
         >
+            <BackgroundDecoration variant="line"/>
             <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-16 items-center">
                 {/* Left Side: Content */}
                 <motion.div

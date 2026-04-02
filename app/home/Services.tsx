@@ -108,7 +108,7 @@ export default function Services() {
                     <motion.div
                         key={index}
                         variants={itemVars}
-                        className="text-left group relative bg-surface border-2 border-green/10 p-10 rounded-[2.5rem] transition-[transform,background-color,border-color,box-shadow] duration-500 flex flex-col items-start hover:border-green/40 hover:-translate-y-3 hover:shadow-2xl hover:shadow-green/10 overflow-hidden will-change-transform"
+                        className="text-left group relative bg-surface border-2 border-green/10 p-10 rounded-[2.5rem] transition-all duration-500 flex flex-col items-start hover:border-green/40 hover:-translate-y-2 hover:shadow-2xl hover:shadow-green/10 overflow-hidden"
                     >
                         {/* Decorative Background Index */}
                         <span className="absolute -top-4 -right-2 text-8xl font-black text-green/5 select-none group-hover:text-green/10 transition-colors duration-500">
@@ -117,7 +117,7 @@ export default function Services() {
 
                         {/* Icon Container */}
                         <div className="relative mb-8">
-                            <service.icon className="w-12 h-12 text-green/80 mb-6 transition-transform duration-300 group-hover:scale-125" />
+                            <service.icon className="w-12 h-12 text-green/80 mb-6 transition-transform duration-300 group-hover:scale-110" />
                         </div>
 
                         {/* Content */}
@@ -137,7 +137,7 @@ export default function Services() {
                         </div>
 
                         {/* Hover Border Glow */}
-                        <div className="absolute bottom-0 left-0 h-1 w-0 bg-green group-hover:w-full transition-all duration-700 ease-out" />
+                        <div className="absolute bottom-0 left-0 h-1 w-0 bg-green/80 group-hover:w-full transition-all duration-700 ease-out" />
                     </motion.div>
                 ))}
             </motion.div>
