@@ -89,8 +89,15 @@ export default function BackgroundDecoration({
                     className,
                 )}
             >
-                <div className="absolute top-[-20%] left-[-10%] w-full h-full bg-linear-to-br from-brand-dominant/10 via-transparent to-transparent blur-[120px]" />
-                <div className="absolute bottom-[-20%] right-[-10%] w-full h-full bg-linear-to-tl from-green/10 via-transparent to-transparent blur-[120px]" />
+                <div
+                    style={{
+                        background: `
+                            radial-gradient(at 0% 0%, var(--brand-dominant) 0%, transparent 60%),
+                            radial-gradient(at 100% 100%, var(--green) 0%, transparent 60%)
+                        `,
+                    }}
+                    className="absolute inset-0 opacity-10"
+                />
                 <div className="absolute inset-0 opacity-[0.04] bg-size-[8px_8px] bg-[radial-gradient(var(--text-main)_1px,transparent_0)]" />
             </div>
         );
