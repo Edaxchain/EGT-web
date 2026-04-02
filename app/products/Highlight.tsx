@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Check, ArrowRight, Zap, Shield, BarChart3 } from "lucide-react";
 import { Button } from "@/app/_components/ui/button";
+import BackgroundDecoration from "@/app/_components/ui/backgroundDecoration";
 
 const PRODUCTS = [
     {
@@ -68,21 +69,54 @@ export default function Highlight() {
     return (
         <section id="highlight" className="bg-background">
             {/* Page Header */}
-            <div className="py-24 px-8 md:px-12 lg:px-48 text-center  bg-green-light">
+            <div className="relative pt-32 pb-24 px-8 md:px-12 lg:px-48 overflow-hidden">
+                <BackgroundDecoration />
+
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
+                    initial="hidden"
+                    whileInView="visible"
                     viewport={{ once: true }}
-                    className="max-w-4xl mx-auto space-y-6"
+                    variants={{
+                        hidden: {},
+                        visible: { transition: { staggerChildren: 0.1 } },
+                    }}
+                    className="relative z-10 max-w-5xl mx-auto space-y-8 text-center"
                 >
-                    <h1 className="text-5xl md:text-7xl font-black text-text-main-static tracking-tighter leading-none">
-                        SOLAR INNOVATIONS
-                    </h1>
-                    <p className="text-xl max-w-2xl mx-auto font-medium">
+                    <motion.h1
+                        variants={{
+                            hidden: { opacity: 0, y: 30 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        transition={{
+                            duration: 0.8,
+                            ease: [0.165, 0.84, 0.44, 1],
+                        }}
+                        className="text-6xl md:text-8xl font-black text-text-main tracking-[-0.05em] leading-none uppercase"
+                    >
+                        SOLAR <span className="text-green">INNOVATIONS</span>
+                    </motion.h1>
+
+                    <motion.p
+                        variants={{
+                            hidden: { opacity: 0, y: 20 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        className="text-xl md:text-2xl max-w-2xl text-text-sub mx-auto font-medium leading-relaxed"
+                    >
                         Explore our advanced range of solar cells designed for
                         maximum performance, efficiency, and long-term
                         sustainability.
-                    </p>
+                    </motion.p>
+
+                    <motion.div
+                        variants={{
+                            hidden: { opacity: 0, scale: 0.9 },
+                            visible: { opacity: 1, scale: 1 },
+                        }}
+                        className="pt-4"
+                    >
+                        <div className="w-12 h-1 bg-brand-dominant mx-auto rounded-full" />
+                    </motion.div>
                 </motion.div>
             </div>
 
@@ -107,7 +141,7 @@ export default function Highlight() {
                             >
                                 <div className="space-y-4">
                                     <div className="flex items-center gap-4 text-brand-dominant font-black">
-                                        <span className="text-4xl opacity-20">
+                                        <span className="text-4xl text-green-light">
                                             {product.id}
                                         </span>
                                         <div className="h-px w-12 bg-brand-dominant/30" />

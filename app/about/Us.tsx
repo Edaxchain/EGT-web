@@ -2,6 +2,7 @@
 
 import { motion, Variants } from "framer-motion";
 import { Medal, Leaf, Microscope } from "lucide-react";
+import BackgroundDecoration from "@/app/_components/ui/backgroundDecoration";
 const containerVars = {
     hidden: { opacity: 0 },
     visible: {
@@ -88,6 +89,8 @@ export default function Us() {
             className="relative w-full overflow-hidden py-24 px-8 md:px-12 lg:px-48 bg-background transition-colors duration-500"
         >
             <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
+                <BackgroundDecoration />
+
                 {/* Left Side: Content */}
                 <motion.div
                     className="space-y-12"
