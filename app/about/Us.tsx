@@ -3,6 +3,7 @@
 import { motion, Variants } from "framer-motion";
 import { Medal, Leaf, Microscope } from "lucide-react";
 import BackgroundDecoration from "@/app/_components/ui/backgroundDecoration";
+
 const containerVars = {
     hidden: { opacity: 0 },
     visible: {

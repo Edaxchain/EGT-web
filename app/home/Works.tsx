@@ -1,7 +1,8 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { Home, Zap, Battery, RefreshCcw, Car, Globe } from "lucide-react";
+import { Home, Zap, Battery } from "lucide-react";
+import BackgroundDecoration from "@/app/_components/ui/backgroundDecoration";
 
 const projects = [
     {
@@ -59,6 +60,7 @@ export default function Works() {
             id="works"
             className="relative w-full overflow-hidden py-24 px-8 md:px-12 lg:px-48 bg-background"
         >
+            <BackgroundDecoration />
             <motion.div
                 className="w-full relative z-10 text-center mb-16"
                 initial="hidden"
