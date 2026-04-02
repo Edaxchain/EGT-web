@@ -60,7 +60,7 @@ export default function Works() {
             id="works"
             className="relative w-full overflow-hidden py-24 px-8 md:px-12 lg:px-48 bg-background"
         >
-            <BackgroundDecoration variant="mesh" />
+            <BackgroundDecoration variant="glow" />
             <motion.div
                 className="w-full relative z-10 text-center mb-16"
                 initial="hidden"
