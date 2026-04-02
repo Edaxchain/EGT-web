@@ -1,5 +1,5 @@
 import Highlight from "./Highlight";
-import Contact from "../home/Contact";
+import Contact from "./Contact";
 
 export default function LandingPage() {
     return (

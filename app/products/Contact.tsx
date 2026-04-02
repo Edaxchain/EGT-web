@@ -3,6 +3,7 @@
 import { motion, Variants } from "framer-motion";
 import { Button } from "@/app/_components/ui/button";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 export default function Contact() {
     const containerVars = {

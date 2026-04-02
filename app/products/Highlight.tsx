@@ -1,8 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Check, ArrowRight, Zap, Shield, BarChart3 } from "lucide-react";
+import {
+    Check,
+    ArrowRight,
+    Zap,
+    Shield,
+    BarChart3,
+    FileDown,
+} from "lucide-react";
 import { Button } from "@/app/_components/ui/button";
+import Link from "next/link";
 import BackgroundDecoration from "@/app/_components/ui/backgroundDecoration";
 
 const PRODUCTS = [
@@ -23,7 +31,7 @@ const PRODUCTS = [
             { label: "Cell Type", value: "N-Type Mono" },
             { label: "Degradation", value: "< 0.4% / Year" },
         ],
-        color: "var(--brand-dominant)",
+        color: "var(--green)",
     },
     {
         id: "02",
@@ -61,7 +69,7 @@ const PRODUCTS = [
             { label: "Cell Count", value: "156 Cells" },
             { label: "Life Expectancy", value: "30+ Years" },
         ],
-        color: "var(--brand-dominant)",
+        color: "var(--green)",
     },
 ];
 
@@ -115,7 +123,7 @@ export default function Highlight() {
                         }}
                         className="pt-4"
                     >
-                        <div className="w-12 h-1 bg-brand-dominant mx-auto rounded-full" />
+                        <div className="w-12 h-1 bg-green mx-auto rounded-full" />
                     </motion.div>
                 </motion.div>
             </div>
@@ -125,7 +133,7 @@ export default function Highlight() {
                 {PRODUCTS.map((product, index) => (
                     <div
                         key={product.id}
-                        className={`py-32 px-8 md:px-12 lg:px-48 overflow-hidden ${index % 2 === 1 ? "bg-surface/30" : ""}`}
+                        className={`py-24 px-8 md:px-12 lg:px-24 xl:px-48 overflow-hidden`}
                     >
                         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                             {/* Content Side */}
@@ -140,11 +148,11 @@ export default function Highlight() {
                                 className={`space-y-10 ${index % 2 === 1 ? "lg:order-2" : ""}`}
                             >
                                 <div className="space-y-4">
-                                    <div className="flex items-center gap-4 text-brand-dominant font-black">
+                                    <div className="flex items-center gap-4 text-green font-black">
                                         <span className="text-4xl text-green-light">
                                             {product.id}
                                         </span>
-                                        <div className="h-px w-12 bg-brand-dominant/30" />
+                                        <div className="h-px w-12 bg-green/30" />
                                         <span className="tracking-[0.2em] text-sm uppercase">
                                             {product.tagline}
                                         </span>
@@ -165,7 +173,7 @@ export default function Highlight() {
                                             key={i}
                                             className="flex items-center gap-3"
                                         >
-                                            <div className="shrink-0 w-6 h-6 rounded-full bg-brand-dominant/10 flex items-center justify-center text-brand-dominant">
+                                            <div className="shrink-0 w-6 h-6 rounded-full bg-green/10 flex items-center justify-center text-green">
                                                 <Check
                                                     className="w-4 h-4"
                                                     strokeWidth={3}
@@ -179,10 +187,10 @@ export default function Highlight() {
                                 </div>
 
                                 {/* Stats Grid */}
-                                <div className="p-8 rounded-4xl bg-brand-dominant/5 border border-brand-dominant/10 grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <div className="p-8 rounded-4xl bg-green/5 border border-green/10 grid grid-cols-1 md:grid-cols-3 gap-8">
                                     {product.stats.map((stat, i) => (
                                         <div key={i} className="space-y-1">
-                                            <p className="text-xs font-black text-brand-dominant/60 uppercase tracking-widest">
+                                            <p className="text-xs font-black text-green/60 uppercase tracking-widest">
                                                 {stat.label}
                                             </p>
                                             <p className="text-xl font-black text-text-main leading-none">
@@ -192,15 +200,22 @@ export default function Highlight() {
                                     ))}
                                 </div>
 
-                                <div className="flex flex-wrap gap-4 pt-4">
-                                    <Button className="h-14 px-8 rounded-full bg-brand-dominant hover:bg-brand-dominant/90 text-white font-black text-base shadow-xl shadow-brand-dominant/20 transition-all active:scale-95">
-                                        VIEW DATASHEET
+                                <div className="flex flex-wrap md:flex-nowrap justify-center lg:justify-start gap-4 w-full">
+                                    <Button
+                                        asChild
+                                        className="text-lg h-14 px-8"
+                                    >
+                                        <Link href="#">View Datasheet</Link>
                                     </Button>
                                     <Button
+                                        asChild
                                         variant="outline"
-                                        className="h-14 px-8 rounded-full border-2 border-brand-dominant/20 hover:border-brand-dominant text-brand-dominant font-black text-base transition-all"
+                                        className="text-lg h-14 px-8"
                                     >
-                                        GET A QUOTE
+                                        <Link href="#">
+                                            Get A Quote
+                                            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
+                                        </Link>
                                     </Button>
                                 </div>
                             </motion.div>
@@ -211,13 +226,13 @@ export default function Highlight() {
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 viewport={{ once: true, margin: "-100px" }}
                                 transition={{ duration: 0.8, ease: "easeOut" }}
-                                className={`relative aspect-square rounded-[3rem] overflow-hidden bg-brand-dominant/5 border-2 border-brand-dominant/10 group ${index % 2 === 1 ? "lg:order-1" : ""}`}
+                                className={`relative aspect-square rounded-[3rem] overflow-hidden bg-green/5 border-2 border-green/10 group ${index % 2 === 1 ? "lg:order-1" : ""}`}
                             >
                                 {/* Decorative elements for placeholder */}
                                 <div className="absolute inset-0 flex items-center justify-center">
                                     <div className="text-center space-y-4 opacity-30 group-hover:opacity-100 transition-opacity duration-500">
-                                        <Zap className="w-16 h-16 text-brand-dominant mx-auto" />
-                                        <p className="font-black text-brand-dominant tracking-widest text-lg">
+                                        <Zap className="w-16 h-16 text-green mx-auto" />
+                                        <p className="font-black text-green tracking-widest text-lg">
                                             PRODUCT IMAGE
                                         </p>
                                         <p className="text-xs text-text-sub font-bold uppercase tracking-widest">
@@ -227,54 +242,11 @@ export default function Highlight() {
                                 </div>
 
                                 {/* Background Grid Animation */}
-                                <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(circle_at_2px_2px,var(--brand-dominant)_1px,transparent_0)] bg-size-[40px_40px]" />
-
-                                {/* Floating Overlay Info */}
-                                <div className="absolute bottom-8 left-8 right-8 p-6 rounded-2xl bg-white/90 backdrop-blur-md border border-white/20 shadow-2xl translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                                    <div className="flex justify-between items-center">
-                                        <div className="flex items-center gap-3">
-                                            <div className="w-10 h-10 rounded-xl bg-brand-dominant flex items-center justify-center text-white">
-                                                <BarChart3 className="w-5 h-5" />
-                                            </div>
-                                            <div>
-                                                <p className="text-xs font-black text-brand-dominant uppercase">
-                                                    Model Status
-                                                </p>
-                                                <p className="text-sm font-black text-text-main uppercase tracking-tight">
-                                                    Active Production
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div className="w-10 h-10 rounded-full bg-brand-dominant/10 flex items-center justify-center text-brand-dominant">
-                                            <Shield className="w-5 h-5" />
-                                        </div>
-                                    </div>
-                                </div>
+                                <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(circle_at_2px_2px,var(--green)_1px,transparent_0)] bg-size-[40px_40px]" />
                             </motion.div>
                         </div>
                     </div>
                 ))}
-            </div>
-
-            {/* Bottom CTA */}
-            <div className="py-24 px-8 text-center border-t border-border/30">
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    className="max-w-2xl mx-auto space-y-8"
-                >
-                    <h3 className="text-4xl font-black text-text-main tracking-tight leading-none uppercase">
-                        Not sure which one fits?
-                    </h3>
-                    <p className="text-lg text-text-sub font-medium">
-                        Our engineering team is ready to help you calculate the
-                        optimal configuration for your specific energy needs.
-                    </p>
-                    <Button className="h-16 px-12 rounded-full bg-brand-dominant hover:bg-brand-dominant/90 text-white font-black text-lg shadow-2xl shadow-brand-dominant/30 flex items-center gap-3 mx-auto transition-all active:scale-95">
-                        CONSULT AN EXPERT <ArrowRight className="w-6 h-6" />
-                    </Button>
-                </motion.div>
             </div>
         </section>
     );
