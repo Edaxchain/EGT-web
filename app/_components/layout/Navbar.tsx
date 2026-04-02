@@ -12,7 +12,7 @@ export default function Navbar() {
         { title: "Home", href: "/" },
         { title: "Services", href: "/services" },
         { title: "Technology", href: "/technology" },
-        { title: "Projects", href: "/projects" },
+        { title: "Products", href: "/products" },
         { title: "About Us", href: "/about" },
         { title: "Contact", href: "/contact" },
     ];

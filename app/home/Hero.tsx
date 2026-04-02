@@ -31,7 +31,7 @@ export default function Hero() {
     return (
         <section
             id="hero"
-            className="relative flex flex-col lg:flex-row h-auto lg:h-[60vh] min-h-[540px] bg-panel-dark overflow-hidden items-start px-12 lg:px-48"
+            className="relative flex flex-col lg:flex-row h-auto lg:h-[60vh] min-h-[540px] bg-background overflow-hidden items-start px-12 lg:px-48"
         >
             {/* Background Image Container */}
             <div className="absolute inset-y-0 right-0 w-full lg:w-[60%] pointer-events-none z-0">
@@ -81,7 +81,7 @@ export default function Hero() {
                     {/* Headline */}
                     <motion.h1
                         variants={itemVars}
-                        className="text-4xl sm:text-5xl md:text-6xl font-black text-panel-dark-text leading-[0.95] tracking-tighter mb-6"
+                        className="text-4xl sm:text-5xl md:text-6xl font-black tex-text-main leading-[0.95] tracking-tighter mb-6"
                     >
                         ติดตั้งโซล่าเซลล์ ครบวงจร
                         <br />

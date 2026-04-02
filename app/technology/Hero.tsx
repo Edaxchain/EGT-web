@@ -4,7 +4,7 @@ import { Button } from '@/app/_components/ui/button';
 import CountUpNumber from '@/app/_lib/count';
 import { itemVars, containerVars } from '@/app/_lib/animations';
 import { motion } from 'framer-motion';
-
+import BackgroundDecoration from "@/app/_components/ui/backgroundDecoration";
 
 export default function Hero() {
 
@@ -80,19 +80,10 @@ export default function Hero() {
                 id='hero'
                 className="min-h-screen bg-background text-text-main pt-6 pb-12 font-sans relative overflow-hidden">
                 {/* Animation Scan Line */}
-                <div className="absolute inset-x-0 h-1 bg-gradient-to-r from-transparent via-[var(--green-light)] to-transparent animate-scan-custom z-0 pointer-events-none"></div>
+                <div className="absolute inset-x-0 h-1 bg-linear-to-r from-transparent via-(--green-light) to-transparent animate-scan-custom z-0 pointer-events-none"></div>
 
                 {/* Background Grid */}
-                <div className="absolute inset-0 opacity-10 pointer-events-none">
-                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="var(--green)" strokeWidth="1" />
-                            </pattern>
-                        </defs>
-                        <rect width="100%" height="100%" fill="url(#grid)" />
-                    </svg>
-                </div>
+                <BackgroundDecoration variant='line'/>
 
                 <div className="max-w-7xl mx-auto px-6 relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">

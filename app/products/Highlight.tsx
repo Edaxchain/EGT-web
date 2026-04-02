@@ -4,10 +4,7 @@ import { motion } from "framer-motion";
 import {
     Check,
     ArrowRight,
-    Zap,
-    Shield,
-    BarChart3,
-    FileDown,
+    Zap
 } from "lucide-react";
 import { Button } from "@/app/_components/ui/button";
 import Link from "next/link";
