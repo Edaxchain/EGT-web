@@ -32,7 +32,9 @@ export default function Blockchain() {
     ];
 
     return (
-        <section className="py-12 bg-background relative overflow-hidden">
+        <section 
+        id='blockchain'
+        className="py-12 bg-background relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 {/* Header */}
                 <motion.div
