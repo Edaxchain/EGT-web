@@ -24,12 +24,17 @@
 
 .dark {
     --background: #1a1a1a;
+    --background-static: #ffffff;
     --foreground: #f0f0f0;
     --surface: #242824;
     --text-main: #f0f0f0;
-    --text-sub: #c5c5c5;
+    --text-main-static: #1a1a1a;
     --text-main-inverted: #1a1a1a;
+    --text-main-inverted-static: #f0f0f0;
+    --text-sub: #c5c5c5;
+    --text-sub-static: #494949;
     --text-sub-inverted: #c5c5c5;
+    --text-sub-inverted-static: #f0f0f0;
     --green: rgb(61, 221, 61);
     --green-dark: #4cc44c;
     --green-light: #33c233;
